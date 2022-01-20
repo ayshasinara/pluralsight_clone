@@ -26,17 +26,17 @@
 
 }
 
-h3 {
+.box>h3 {
     color: white;
     margin: 40px;
 
 }
 
-p:hover {
+.box>p:hover {
     color: white;
 }
 
-p {
+.box>p {
     margin: 20px 0px 0px 40px;
     color: #7c7c7d;
     font-weight: normal !important;
