@@ -1,0 +1,98 @@
+body{
+    background-color: black;
+}
+.box{
+    background-color: black;
+    width:95%;
+    margin: auto;
+    font-family: "Helvetica Neue", "Helvetica"," Arial","romote" ,"sans-serif";
+}
+.product-flex{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+ justify-content: space-between;
+ 
+}
+/* img{
+    width: 93%;
+    border-radius: 20px;
+} */
+h5{
+    color: #FFBA0E !important;
+   
+}
+h1,p{
+    color: rgb(255, 255, 255);
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    
+}
+h4{
+    color:#EC008C !important;
+}
+.box_p{
+    font-size: 14px;
+    
+}
+.box2{
+    display: grid;
+    grid-template-columns: (2,700px);
+    
+
+    margin-top: 100px;
+}
+.back{
+    height: 450px;
+   /* width:60%; */
+    background-image:url('https://www.pluralsight.com/content/pluralsight/en/jcr:content/main/targeted_section/targeted-parsys-customer-types-1/generic_block/parsys/columns/column-parsys-1/generic_block/image-res.img.6035278d-dbde-46e2-8112-82c230cb476a.png') ;
+background-position: center center;
+ background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.my_plural{
+
+padding-top: 100px;
+padding-left: 50px;
+
+ font-size: 70px;
+}
+.ryan{
+ background-color: rgb(12, 100, 182);
+ padding: 60px ;
+ /* width:40% */
+}
+.btn{
+ background-color: black;
+ color: white;
+ border: 0px;
+ height: 50px;
+
+}
+/* .ryan-img{
+ width: 400px;
+} */
+@media only screen and (min-width:0px) and (max-width:320px){
+.product-flex{
+   
+    grid-template-columns: 300px;
+}
+.box2{
+    
+    grid-template-columns: 200px;
+    grid-template-rows: repeat(2,200px);
+    
+}
+}
+
+/*mobile view  */
+@media only screen and (min-width:321px) and (max-width:720px){
+.product-flex{
+   
+    grid-template-columns: repeat(2,1fr);
+}
+.box2{
+   
+    grid-template-columns: repeat(2,100px);
+   grid-template-rows: repeat(2,200px);
+}
+}
