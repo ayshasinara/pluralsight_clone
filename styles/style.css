@@ -1,0 +1,73 @@
+body{
+    font-family: 'PS Commons', sans-serif;
+}
+
+.text-white{
+    color: #fff;
+}
+.text-pink{
+    color: #d6004d;
+}
+.btn{
+    border: none;
+    color: #fff;
+    padding: 14px 29px;
+    letter-spacing: .5px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.btn-white-border{
+    border: 1px solid #fff;
+    background-color: transparent;
+    transition: box-shadow .5s ease-in-out;
+}
+.btn-white-border:hover{
+    box-shadow: inset 0 0 0 1px #fff;
+}
+.btn-gradient{
+    position: relative;
+    font-size: 15px;
+    padding: 18px 35px;
+    background-size: 300% 100%;
+    min-width: 260px;
+    background-image: linear-gradient(to right,#F05A28,#EC008C, #F05A28);
+}
+.btn-gradient:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-size: 200% 100%;
+    font-size: 15px;
+    padding: 18px 35px;
+    border-radius: 2px;
+    background-image: linear-gradient(to right, #EC008C, #F05A28,#EC008C);
+    opacity: 0;
+    transition: box-shadow 0.3s ease-in-out;
+    transition: all .6s ease-in-out;
+}
+.btn-gradient:hover:after{
+    opacity: 1;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 40%);
+}
+.btn-gradient-tryforfree:after{
+    content: "TRY FOR FREE";
+}
+.btn-gradient-learnmore{
+    background: #EC008C;
+    min-width: 160px;
+}
+.btn-gradient-learnmore:after{
+    content: "LEARN MORE";
+    background-image: linear-gradient(to right,#F05A28,#EC008C, #F05A28);
+}
+.text-highlight{
+    background-color: #dbccff;
+    color: #000;
+    padding: 0 5px;
+    border-radius: 2px;
+}

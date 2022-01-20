@@ -1,0 +1,28 @@
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.share-your-skills{
+    height: 700px;
+    background: #000;
+    padding: 100px;
+    text-align: center;
+}
+.non-profit{
+    background-image: url("https://www.pluralsight.com/content/pluralsight/en/jcr:content/main/generic_block_1609496607/image-res.img.33ca2e50-2f6c-49aa-8635-2ceaf23513b1.jpg");
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px;
+}
+.non-profit > div{
+    width: 45%;
+}
+.try-foot{
+    background-color: #181818;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 150px;
+}
