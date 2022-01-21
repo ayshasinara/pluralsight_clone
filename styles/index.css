@@ -13,10 +13,10 @@ body{
  justify-content: space-between;
  
 }
-/* img{
+.image>img{
     width: 93%;
     border-radius: 20px;
-} */
+}
 h5{
     color: #FFBA0E !important;
    
@@ -35,14 +35,14 @@ h4{
 }
 .box2{
     display: grid;
-    grid-template-columns: (2,700px);
-    
+   grid-template-columns: 900px 500px;
+    /* flex-wrap: wrap; */
 
     margin-top: 100px;
 }
 .back{
     height: 450px;
-   /* width:60%; */
+   width:100%;
     background-image:url('https://www.pluralsight.com/content/pluralsight/en/jcr:content/main/targeted_section/targeted-parsys-customer-types-1/generic_block/parsys/columns/column-parsys-1/generic_block/image-res.img.6035278d-dbde-46e2-8112-82c230cb476a.png') ;
 background-position: center center;
  background-size: cover;
@@ -59,7 +59,7 @@ padding-left: 50px;
 .ryan{
  background-color: rgb(12, 100, 182);
  padding: 60px ;
- /* width:40% */
+ width:100%
 }
 .btn{
  background-color: black;
@@ -68,18 +68,18 @@ padding-left: 50px;
  height: 50px;
 
 }
-/* .ryan-img{
+.ryan-img{
  width: 400px;
-} */
+}
 @media only screen and (min-width:0px) and (max-width:320px){
 .product-flex{
    
-    grid-template-columns: 300px;
+    grid-template-columns: repeat(1,1fr);
 }
 .box2{
     
-    grid-template-columns: 200px;
-    grid-template-rows: repeat(2,200px);
+    grid-template-columns: repeat(1,1fr);
+    /* grid-template-rows: repeat(2,200px); */
     
 }
 }
@@ -92,7 +92,7 @@ padding-left: 50px;
 }
 .box2{
    
-    grid-template-columns: repeat(2,100px);
-   grid-template-rows: repeat(2,200px);
+    grid-template-columns: repeat(1,1fr);
+   /* grid-template-rows: repeat(2,200px); */
 }
 }
