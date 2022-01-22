@@ -225,8 +225,18 @@ ul{
 .faq-list{
     width: 95%;
 }
-.ans{
+.ans{ margin-bottom: 20px;
     display: none;
+}
+.ans>ul{
+    list-style: inside;
+    border: none;
+}
+.ans>ul>li{ border: none;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    padding-left: 9px;
+    
 }
 .que{
     display: flex;
@@ -235,10 +245,10 @@ ul{
 .show{
     display: block;
 }
-.faq-list ul li{
+.faq-list>ul>li{
     border-bottom: 1px solid #333333;
 }
-.faq-list ul li:last-child{
+.faq-list>ul>li:last-child{
     border: none;
 }
 .industry-standard{
