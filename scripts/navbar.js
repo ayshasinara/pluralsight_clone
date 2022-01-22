@@ -163,7 +163,7 @@ function showNavbar(){
                             <a href="">What is Skills?</a>
                         </li>
                         <li>
-                            <a href="">View Plans</a>
+                            <a href="pricing.html">View Plans</a>
                         </li>
                     </ul>
                 </div>
@@ -175,7 +175,7 @@ function showNavbar(){
                             <a href="">What is Flow?</a>
                         </li>
                         <li>
-                            <a href="">View Plans</a>
+                            <a href="pricing.html">View Plans</a>
                         </li>
                     </ul>
                 </div>
@@ -238,7 +238,7 @@ function showNavbar(){
             <div class="nav-closebtn" onclick="closeDropdown(4)"><i class="fas fa-times"></i></div>
             <div class="dropdown-container nav-signin-container">
                 <div class="text-white nav-content-skills">
-                    <div>
+                    <div onclick="window.location.href='signin.html'">
                         <p class="nav-content-title">SIGN IN WITH</p>
                         <div class="nav-signin-logo">
                             <img class="nav-product-logo" src="https://www.pluralsight.com/content/dam/pluralsight2/experiment-fragment/navigation/Skill_logo_white.png" alt="SKILLS">
@@ -247,7 +247,7 @@ function showNavbar(){
                     </div>
                 </div>
                 <div class="text-white nav-content-flow">
-                    <div>
+                    <div onclick="window.location.href='signin.html'">
                         <p class="nav-content-title">SIGN IN WITH</p>
                         <div class="nav-signin-logo">
                             <img class="nav-product-logo" src="https://www.pluralsight.com/content/dam/pluralsight2/experiment-fragment/navigation/Flow_Logo_white.png" alt="FLOW">

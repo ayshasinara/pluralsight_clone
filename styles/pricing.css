@@ -195,15 +195,16 @@ ul{
 .animated-arrow-text{
     padding-top: 2%;
 }
-.btn-gradient-standard:after{
-    content: "START WITH STANDARD";
-    padding: 0;
-    padding-top: 7%;
+.btn-gradient-standard{
+    width: 300px;
 }
-.btn-gradient-get:after{
+.btn-gradient-standard::after{
+    content: "START WITH STANDARD";
+}
+.btn-gradient-get::after{
     content: "GET STARTED";
 }
-.btn-gradient-contact:after{
+.btn-gradient-contact::after{
     content: "CONTACT SALES";
 }
 .faq{
