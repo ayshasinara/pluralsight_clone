@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
 body{
     margin: 0;
     padding: 0;
@@ -166,4 +167,96 @@ body{
     display: inline-flex;
     gap: 5px;
     align-items: center;
+}
+.nav-platform-container ul{
+    list-style: none;
+    margin-left: -40px;
+}
+.nav-platform-skills{
+    display: flex;
+    flex-direction: column;
+}
+.nav-platform-container, .nav-platform-2>div{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.nav-platform-paths > ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-platform-paths > ul li{
+    margin: 1.8%;
+}
+.path-box{
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    padding: 2%;
+    background-color: #222222;
+    border-radius: 10px;
+}
+.path-box:hover{
+    background-color: #252525;
+}
+.path-box > img{
+    width: 50px;
+    height: 50px;
+    padding-right: 20px;
+}
+.path-box .text-light{
+    color: #74857a;
+}
+.column-flex{
+    gap: 20px;
+    align-content: center;
+}
+.nav-platform-22{
+    display: flex;
+}
+.nav-platform-22 p:last-child{
+    border-left: 2px solid #363638;
+    padding-left: 25px;
+}
+.border-bottom{
+    padding-bottom: 10px;
+    border-bottom: 2px solid #363638;
+}
+.path-box p{
+    font-size: 13px;
+}
+.font-12{
+    font-size: 15px;
+}
+.path-box .q{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+}
+.nav-searchbox{
+    position: fixed;
+    width: 100vw;
+    right: 0;
+    left: 0;
+    top: 87px;
+}
+.nav-search-container{
+    height: inherit;
+    font-size: 20px;
+    padding: 2% 5%;
+    color: #fff;
+    font-weight: 100;
+}
+.nav-search-container input{
+    font-size: 20px;
+    width: 90%;
+    margin-left: 2%;
+    background-color: #131313;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.search-close{
+    right: 100px;
+    top: 26px;
 }

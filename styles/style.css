@@ -30,6 +30,13 @@ body{
 .font-bold{
     font-weight: 600;
 }
+.uppercase{
+    text-transform: uppercase;
+}
+.column-flex{
+    display: flex;
+    flex-direction: column;
+}
 .btn{
     border: none;
     color: #fff;
