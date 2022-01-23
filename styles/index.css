@@ -1,8 +1,36 @@
 body {
   background-color: #000;
 }
+.changing-text{
+  display: inline-flex;
+}
+#text-content::after{
+  content:"";
+  animation: changeText 6s ease infinite;
+  animation-timing-function: cubic-bezier(1, 0, 0, 1);
+}
+@keyframes changeText {
+  0% { content:"teams";}
+  20% { content:"products";}
+  40% { content:"workflows";}
+  60% { content: "skills";}
+  80% { content: "processes";}
+}
+@keyframes slideUp {
+  0% {margin-bottom: -50px; font-size: 20px;}
+  10% {margin-bottom: -40px; font-size: 20px;}
+  20% {margin-bottom: -30px; font-size: 20px;}
+  30% {margin-bottom: -20px; font-size: 20px;}
+  40% {margin-bottom: -10px; font-size: 20px;}
+  50%{margin-bottom: 0px; font-size: 20px;}
+  60% {margin-bottom: 10px; font-size: 20px;}
+  70% {margin-bottom: 20px; font-size: 20px;}
+  80% {margin-bottom: 30px; font-size: 20px;}
+  90% {margin-bottom: 40px; font-size: 20px;}
+  100%{margin-bottom: 50px; font-size: 20px;}
+}
 .share-your-skills {
-  height: 700px;
+  height: 100px;
   background: #000;
   padding: 100px;
   text-align: center;

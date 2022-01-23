@@ -1,4 +1,5 @@
 document.querySelector(".btn").addEventListener("click", core)
+changingText();
 
 var count=0;
 function core(){
@@ -11,4 +12,9 @@ function core(){
   else{
       a.style="display:none"
   }
+}
+
+function changingText(){
+  let text = document.getElementsByClassName("changing-text")[0];
+  console.log(text);
 }

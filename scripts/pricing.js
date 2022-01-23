@@ -26,3 +26,14 @@ function showPlans(i){
         slide.children[1].style.backgroundColor = "#2d2d2d";
     }
 }
+
+function changeRates(){
+    let elms = document.getElementsByClassName("ind-rates");
+    if(elms[0].innerText=="1,499"){
+        elms[0].innerText = "12,299";
+        elms[1].innerText = "18,399";
+    }else{
+        elms[0].innerText = "1,499";
+        elms[1].innerText = "2,299";
+    }
+}
