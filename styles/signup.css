@@ -56,7 +56,7 @@ body {
 }
 .btn-gradient-pickaplan::after {
   content: "PICK A PLAN";
-  padding: 7.2%;
+  padding: 8.5%;
 }
 .btn-gradient-blue {
   background-image: linear-gradient(to right, #2556a3, #2393d4, #2556a3);
