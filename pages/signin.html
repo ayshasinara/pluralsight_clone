@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In | Pluralsight</title>
-    <link rel="shortcut icon" href="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/favicons/favicon.ico" type="image/x-icon">
-   <link rel="stylesheet" href="../styles/signin.css">
+    <link rel="shortcut icon"
+        href="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/favicons/favicon.ico"
+        type="image/x-icon">
+    <link rel="stylesheet" href="../styles/signin.css">
 </head>
-<body>
-   <div id="container">
-   <div class="box">
-       <img src="https://app.pluralsight.com/id/img/login-logo.png"><br>
-      <form>
-       Email or Username<br>
-       <input type="Email"/><br>
-       Password<br>
-       <input type="Password"/><br>
-       <input class="sub" type="submit" value="Sign in">
-       <p class="p1">Forget password ?</p>
-       <p class="p1">Sing in with Company or School</p>
-       <hr>
-      <a href="signup.html">Create an account</a>
-       <p class="p2">Copyright © 2004 - 2022 Pluralsight LLC. All rights reserved.</p>
-       <p class="p3"> Terms of Use | Privacy Policy</p>
 
-       </form>
-   </div>
-   <div class="banner">
-       <img src="https://www.pluralsight.com/content/dam/pluralsight2/login/login-h1.png"/><br>
-       <button>Try for free</button><br>
-       <img class="img1" src="https://www.pluralsight.com/content/dam/pluralsight2/logos/logo-build-better.png">
-   </div> 
-</div>
+<body>
+    <div id="container">
+        <div class="box">
+            <img src="https://app.pluralsight.com/id/img/login-logo.png"><br>
+            <form onsubmit="signin(event)">
+                Email or Username<br>
+                <input type="email" id="email" /><br>
+                Password<br>
+                <input type="password" id="password" /><br>
+                <input class="sub" type="submit" value="Sign In">
+                <p class="p1">Forget password ?</p>
+                <p class="p1">Sign in with Company or School</p>
+                <hr>
+                <a href="signup.html">Create an account</a>
+                <p class="p2">Copyright © 2004 - 2022 Pluralsight LLC. All rights reserved.</p>
+                <p class="p3"> Terms of Use | Privacy Policy</p>
+
+            </form>
+        </div>
+        <div class="banner">
+            <img src="https://www.pluralsight.com/content/dam/pluralsight2/login/login-h1.png" /><br>
+            <button>Try for free</button><br>
+            <img class="img1" src="https://www.pluralsight.com/content/dam/pluralsight2/logos/logo-build-better.png">
+        </div>
+    </div>
+    <script src="../scripts/signin.js"></script>
 </body>
+
 </html>
-<script>
-    
- </script>   

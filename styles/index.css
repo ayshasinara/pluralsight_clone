@@ -16,19 +16,6 @@ body {
   60% { content: "skills";}
   80% { content: "processes";}
 }
-@keyframes slideUp {
-  0% {margin-bottom: -50px; font-size: 20px;}
-  10% {margin-bottom: -40px; font-size: 20px;}
-  20% {margin-bottom: -30px; font-size: 20px;}
-  30% {margin-bottom: -20px; font-size: 20px;}
-  40% {margin-bottom: -10px; font-size: 20px;}
-  50%{margin-bottom: 0px; font-size: 20px;}
-  60% {margin-bottom: 10px; font-size: 20px;}
-  70% {margin-bottom: 20px; font-size: 20px;}
-  80% {margin-bottom: 30px; font-size: 20px;}
-  90% {margin-bottom: 40px; font-size: 20px;}
-  100%{margin-bottom: 50px; font-size: 20px;}
-}
 .share-your-skills {
   height: 100px;
   background: #000;
@@ -373,4 +360,106 @@ body {
 .mid_box a{
   color: white;
   text-decoration: none;
+}
+.container2{
+  background-color:
+  #181818;
+  width: 100%;
+  height: 1300px;
+  margin-top: 60px;
+
+}
+.container2 > .title{
+  color: #E40084;
+  font-family: sans-serif;
+  padding-top: 50px;
+  padding-left: 18px;
+  font-weight: bold;
+}
+.container2 > .title2{
+  font-family: sans-serif;
+  padding-left: 18px;
+  color: white;
+  font-weight: bold;
+}
+.container2 .parentbox{
+    width: 97.5%;
+    height: 85%;
+    margin: auto;
+}
+.container2 .firstbox{
+  width: 100%;
+  height: 40%;
+
+}
+.container2 .grid1{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: repeat(1,440px);
+}
+.container2 .grid1> div:nth-child(1){
+  background-color: #222222;
+  border-radius: 10px 0px 0px 10px;
+}
+.container2 .grid1> div:nth-child(2){
+  background-color: #222;
+}
+.container2 .img1{
+  height: 100%;
+  width: 100%;
+}
+.container2 .logo{
+  height: 25px;
+  padding: 35px;
+}
+.container2 .text1{
+  color: white;
+  font-size: 42px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: -40px;
+  padding: 35px;
+}
+.container2 .text2{
+  color: white;
+  font-family: sans-serif;
+  margin-top: -69px;
+  padding: 35px;
+}
+.container2 .atri{
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: -69px;
+  padding: 35px;
+  color: white;
+  font-size: 20px;
+
+}
+.container2 .scndbox{
+  width: 100%;
+  height: 58%;
+  margin-top: 40px;
+
+}
+.container2 .grid2{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(1,630px);
+  gap: 20px;
+}
+.container2 .grid2> div{
+    background-color: #222;
+    border-radius: 10px;
+}
+@media only screen and (min-width:0px) and (max-width:1024px){
+  .container2 .grid1{
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows: repeat(1,200px);
+    }
+    .container2 .grid2{
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows: repeat(1,400px);
+    }
+
 }
