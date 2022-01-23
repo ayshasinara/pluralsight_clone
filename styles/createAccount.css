@@ -1,4 +1,4 @@
-body{
+   body{
     background-color: #0d0f12;
 }
 .logo{
@@ -8,14 +8,14 @@ padding: 10px;
 }
 .container{
     width: 98%;
-    height: 1200px;
+    height: 750px;
     margin: auto;
     display: flex;
     margin-top: 30px;
 }
 .box1{
     background-color:#181c20 ;
-    height: 80%;
+    height: 85%;
     width: 60%;
     margin: 10px ;
     flex-direction: row;
@@ -23,7 +23,7 @@ padding: 10px;
 }
 .box2{
     background-color:#181c20 ;
-    height: 40%;
+    height: 60%;
     width: 38%;
     margin: 10px;
 }
@@ -175,21 +175,20 @@ padding: 10px;
     margin: 15px;
 }
 .cont >div{
-    width: 32%;
+    width: 50%;
     margin-left: 5px;
     font-family: sans-serif;
-    font-weight: bold;
     color: white;
     text-align: right;
 }
 .bold{
-    font-size: 19px;
+    font-size: 20px;
 }
 .cont >div:nth-child(1){
-    text-align: left;
+    text-align:left;
 }
 .cont >div:nth-child(2){
-    display: flex;
+    text-align: right;
 }
 .lasttext{
     color: white;
@@ -207,4 +206,14 @@ padding: 10px;
 .arrow{
     border-radius: 50%;
     border: none;
+}
+#check{
+    margin-left: 90px;
+}
+@media only screen  and (min-width:0px) and (max-width: 600px){
+    .inputdiv{
+
+        width: 50%;
+    }
+    
 }
