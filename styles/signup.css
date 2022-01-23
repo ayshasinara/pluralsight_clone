@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #181818;
+}
+.first {
+  background-color: #222222;
+  color: white;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  /* width: 400px; */
+  padding: 50px;
+  margin: 14px;
+  letter-spacing: 1px;
+}
+.first p{
+  letter-spacing: 1px;
+}
+.btn1 {
+  background-image: linear-gradient(to right, #f05a28, #cc4769, #da1089);
+  min-width: 250px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  padding: 16px 34px;
+  border: 0px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+.double {
+  display: flex;
+  justify-content: center;
+}
+#cont > h4 {
+  color: #ec008c !important;
+  padding-top: 60px;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+#cont > h1 {
+  font-size: 56px;
+  line-height: 100%;
+  font-weight: unset;
+  text-transform: none;
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: bold;
+}
+#cont {
+  text-align: center;
+  background-color: #181818;
+  width: 100%;
+  height: 800px;
+}
+.btn-gradient-pickaplan {
+  padding: 6%;
+}
+.btn-gradient-pickaplan::after {
+  content: "PICK A PLAN";
+  padding: 7.2%;
+}
+.btn-gradient-blue {
+  background-image: linear-gradient(to right, #2556a3, #2393d4, #2556a3);
+}
+.btn-gradient-blue::after {
+  background-image: linear-gradient(to right, #2393d4, #2556a3, #2393d4);
+}

@@ -1,0 +1,302 @@
+body{
+    background-color: #181818;
+    padding-top: 12%;
+}
+.slide-control{
+    width: 500px;
+    margin: auto;
+    background-color: #000000;
+    height: 80px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#individual-plans{
+    display: block;
+}
+#team-plans{
+    display: none;
+}
+.slide-control button{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    height: inherit;
+    width: 50%;
+    border-radius: inherit;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+.font-56{
+    font-size: 56px;
+}
+.plans-container {
+    width: 90%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 5%;
+}
+.plans-container>.price_display {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5%;
+    color: white;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+.price_display sup {
+    font-size: medium;
+}
+.price_display>h2 {
+    font-size: 35px;
+    margin-top: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.price_display>h1 {
+    font-size: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'PS Commons', Bold;
+}
+.price_display>p {
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.price_display>.library {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.price_display>button {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 18px 34px;
+    background-image: linear-gradient(to right, #F05A28, #EC008C, #F05A28);
+    font-size: 15px;
+    font-weight: 790;
+    cursor: pointer;
+    border: 0px;
+    letter-spacing: 0.5px;
+    color: white;
+}
+.free_trial {
+    font-size: 15px;
+    color: #aaa;
+}
+.free_trial>a {
+    color: #EC008C;
+    font-weight: 1000;
+    text-decoration: none
+}
+.oppo {
+    background-color: #f7a614;
+    color: black;
+    font-size: 15px;
+    font-weight: 800;
+    height: 25px;
+    padding-top: 2%;
+    text-align: center;
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif
+}
+.oppo2 {
+    height: 25px;
+}
+.compare-library{
+    width: 57%;
+    margin: auto;
+    line-height: 20px;
+    letter-spacing: 1.5px;
+}
+.compare-library > div{
+    gap: 8%;
+}
+.compare-plans{
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    background-color: #18181a;
+}
+.plans-label{
+    position: relative;
+    padding-top: 20px;
+    font-weight: 600;
+}
+.individual{
+    position: absolute;
+    left: 500px;
+    top: 0;
+}
+.team{
+    position: absolute;
+    right: 282px;
+    top: 0;
+}
+.individual:before, .team:before{
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 10px;
+    border-left: 1px solid #333333;
+    border-top: 1px solid #333333;
+    width: 30px;
+    height: 15px;
+}
+.team:before{
+    left: -60px;
+}
+.individual:after, .team:after{
+    content: "";
+    position: absolute;
+    right: -50px;
+    top: 10px;
+    border-right: 1px solid #333333;
+    border-top: 1px solid #333333;
+    width: 30px;
+    height: 15px;
+}
+.team:after{
+    right: -60px;
+}
+.compare-plans-list > ul > li:nth-child(even){
+    background-color: #212121;
+}
+.content-list{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+.content-list P{
+    margin: 0;
+    padding: 5%;
+}
+.content-list-2{
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+}
+.content-list-2 li{
+    padding: 8%;
+    border-left: 1px solid #333333;
+}
+.content-list-2 li:first-child{
+    border: none;
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+.text-blue{
+    padding: 1%;
+    padding-top: 5%;
+}
+.animated-arrow-text{
+    padding-top: 2%;
+}
+.btn-gradient-standard{
+    width: 300px;
+}
+.btn-gradient-standard::after{
+    content: "START WITH STANDARD";
+}
+.btn-gradient-get::after{
+    content: "GET STARTED";
+}
+.btn-gradient-contact::after{
+    content: "CONTACT SALES";
+}
+.faq{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 2%;
+    position: relative;
+}
+.faq-title{
+    width: 400px;
+    margin: auto;
+    top: 50px;
+    left: 100px;
+    position: absolute;
+}
+.faq-title h1{
+    font-size: 40px;
+}
+.faq-list{
+    width: 95%;
+}
+.ans{
+    display: none;
+}
+.que{
+    display: flex;
+    justify-content: space-between;
+}
+.show{
+    display: block;
+}
+.faq-list ul li{
+    border-bottom: 1px solid #333333;
+}
+.faq-list ul li:last-child{
+    border: none;
+}
+.industry-standard{
+    background-image: url("https://www.pluralsight.com/content/dam/pluralsight2/product/v2/skills-bg-cs.jpg");
+    height: 200px;
+    padding: 25% 15%;
+}
+.industry-standard .brands{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+}
+.font-40{
+    font-size: 40px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #363636;
+    transition: .4s;
+    border-radius: 17px;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+.switch input:checked + .slider:before {
+    transform: translateX(26px);
+}
+.mon-year{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 1%;
+}

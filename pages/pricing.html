@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pluralsight Subscription Plans and Pricing: Monthly and Annual</title>
+    <link rel="shortcut icon"
+        href="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/favicons/favicon.ico"
+        type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/pricing.css">
+    <script src="https://kit.fontawesome.com/83d1728178.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="plans-slide text-center text-white">
+        <img src="https://www.pluralsight.com/content/dam/pluralsight2/product/v2/logos/logo-skills.png" alt="">
+        <h1 class="font-56">Plans & pricing</h1>
+        <div class="slide-control" id="slide-control">
+            <button onclick="showPlans('individual')">INDIVIDUAL</button>
+            <button onclick="showPlans(`team`)">TEAM</button>
+        </div>
+    </div>
+    <div id="individual-plans">
+        <div class="mon-year text-white">
+            <p>Monthly</p>
+            <label class="switch">
+                <input type="checkbox" onclick="changeRates()">
+                <span class="slider"></span>
+            </label>
+            <p>Yearly</p>
+        </div>
+        <div class="plans-container">
+            <div class="price_display">
+                <div class="oppo2"></div>
+                <h2>Standard</h2>
+                <h1>
+                    <sup>₹</sup><span class="ind-rates">12,299</span> 
+                </h1>
+                <p>per month</p>
+                <div class="library">Core course library,</div>
+                <div class="library">paths and skill assessments.</div>
+                <button class="btn btn-gradient btn-gradient-standard"
+                    onclick="window.location.href='createAccount.html'">START WITH STANDARD</button>
+                <div class=" free_trial library">Or stat a <a href="createAccount.html">FREE trial</a></div>
+            </div>
+            <div class="price_display">
+                <div class="oppo">BEST OPPORTUNITY</div>
+                <h2>Premium</h2>
+                <h1>
+                    <sup>₹</sup><span class="ind-rates">18,399</span>
+                </h1>
+                <p>per month</p>
+                <div class="library">Entire library of core and expanded courses, exams,</div>
+                <div class="library">projects and interactive courses.</div>
+                <button class="btn btn-gradient btn-gradient-standard"
+                    onclick="window.location.href='createAccount.html'">START WITH STANDARD</button>
+                <div class=" free_trial library">Or stat a <a href="createAccount.html">FREE trial</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="team-plans">
+        <div class="plans-container">
+
+            <div class="price_display">
+
+                <h2>Standard</h2>
+                <h1>
+                    <sup>US$</sup> 399
+                </h1>
+                <p>per user / year</p>
+                <div class="library ">Upskill your team with our core</div>
+                <div class="library">library.</div>
+                <button class="btn btn-gradient btn-gradient-get"
+                    onclick="window.location.href='createAccount.html'">GET STARTED</button>
+
+            </div>
+            <div class="price_display">
+
+                <h2>Professional</h2>
+                <h1>
+                    <sup>US$</sup> 579
+                </h1>
+                <p>per user / year</p>
+                <div class="library">Basic reporting and user</div>
+                <div class="library">analytics for teams.</div>
+                <button class="btn btn-gradient btn-gradient-get"
+                    onclick="window.location.href='createAccount.html'">GET STARTED</button>
+                <div class=" free_trial library">Or stat a <a href="createAccount.html">TEAM trial</a></div>
+            </div>
+            <div class="price_display">
+
+                <h2>Enterprise</h2>
+                <h1>
+                    <sup>US$</sup> 779
+                </h1>
+                <p>per user / year</p>
+                <div class="library box3_change_color">Flexibility and advanced</div>
+                <div class="library box3_change_color">analytics for the enterprise.</div>
+                <button class="btn btn-gradient btn-gradient-contact"
+                    onclick="window.location.href='createAccount.html'">CONTACT SALES</button>
+                <div class=" free_trial library">Or stat a <a href="createAccount.html">pilot</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="compare-library text-white">
+        <h1 class="label text-center">Compare our course libraries</h1>
+        <div class="grid2-50">
+            <div>
+                <h2>Core library</h2>
+                <p>Our core library features 2,500+ of our most-popular courses on in-demand topics like cloud, data,
+                    security, software development, infrastructure and more.</p>
+            </div>
+            <div>
+                <h2>Expanded library</h2>
+                <p>Our expanded library gives you access to our full 7,000+ course library. It includes more advanced
+                    topics if you need to build deep expertise and niche topics for those tackling special projects.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="compare-plans compare-plans-big text-white">
+        <div class="plans-label">
+            <div class="individual text-gold">INDIVIDUAL</div>
+            <div class="team text-pink">TEAM</div>
+        </div>
+        <div class="compare-plans-list">
+            <ul>
+                <li class="content-list">
+                    <p class="text-blue">CORE</p>
+                    <ul class="content-list-2 text-center font-bold">
+                        <li class="no-border">Standard</li>
+                        <li class="no-border">Premium</li>
+                        <li class="no-border">Starter</li>
+                        <li class="no-border">Professional</li>
+                        <li class="no-border">Enterprise</li>
+                    </ul>
+                </li>
+                <li class="content-list">
+                    <p>Free trial</p>
+                    <ul class="content-list-2 text-center font-bold">
+                        <li>For 10 Days</li>
+                        <li>For 10 Days</li>
+                        <li>n/a</li>
+                        <li>For 14 Days</li>
+                        <li>For 14 Days</li>
+                    </ul>
+                </li>
+                <li class="content-list">
+                    <p>Course library</p>
+                    <ul class="content-list-2 text-center font-bold">
+                        <li>Core library</li>
+                        <li>Extended library</li>
+                        <li>Core library</li>
+                        <li>Extended library</li>
+                        <li>Extended library</li>
+                    </ul>
+                </li>
+                <li class="content-list">
+                    <p>Paths</p>
+                    <ul class="content-list-2 text-center">
+                        <li class="text-gold"><i class="fas fa-check"></i></li>
+                        <li class="text-gold"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                    </ul>
+                </li>
+                <li class="content-list">
+                    <p>Channels</p>
+                    <ul class="content-list-2 text-center">
+                        <li class="text-gold"><i class="fas fa-check"></i></li>
+                        <li class="text-gold"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                    </ul>
+                </li>
+                <li class="content-list">
+                    <p>Course discussions</p>
+                    <ul class="content-list-2 text-center">
+                        <li class="text-gold"><i class="fas fa-check"></i></li>
+                        <li class="text-gold"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                    </ul>
+                </li>
+                <li class="content-list">
+                    <p>Exercise files</p>
+                    <ul class="content-list-2 text-center">
+                        <li class="text-gold"><i class="fas fa-check"></i></li>
+                        <li class="text-gold"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                    </ul>
+                </li>
+                <li class="content-list">
+                    <p>Mobile and TV apps</p>
+                    <ul class="content-list-2 text-center">
+                        <li class="text-gold"><i class="fas fa-check"></i></li>
+                        <li class="text-gold"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                    </ul>
+                </li>
+                <li class="content-list">
+                    <p>Offline viewing</p>
+                    <ul class="content-list-2 text-center">
+                        <li class="text-gold"><i class="fas fa-check"></i></li>
+                        <li class="text-gold"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                    </ul>
+                </li>
+                <li class="content-list">
+                    <p>Conferences</p>
+                    <ul class="content-list-2 text-center">
+                        <li class="text-gold"><i class="fas fa-check"></i></li>
+                        <li class="text-gold"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                    </ul>
+                </li>
+                <li class="content-list">
+                    <p>Guides</p>
+                    <ul class="content-list-2 text-center">
+                        <li class="text-gold"><i class="fas fa-check"></i></li>
+                        <li class="text-gold"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                    </ul>
+                </li>
+                <li class="content-list">
+                    <p>Badges</p>
+                    <ul class="content-list-2 text-center">
+                        <li class="text-gold"><i class="fas fa-check"></i></li>
+                        <li class="text-gold"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                    </ul>
+                </li>
+                <li></li>
+                <!-- ------------------------------------------------------------------------------------------------------ -->
+                <div class="text-blue">ASSESSMENTS</div>
+                <li class="content-list">
+                    <p>Skill IQ</p>
+                    <ul class="content-list-2 text-center">
+                        <li class="text-gold"><i class="fas fa-check"></i></li>
+                        <li class="text-gold"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                    </ul>
+                </li>
+                <li class="content-list">
+                    <p>Role IQ</p>
+                    <ul class="content-list-2 text-center">
+                        <li class="text-gold"><i class="fas fa-check"></i></li>
+                        <li class="text-gold"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                    </ul>
+                </li>
+                <li class="content-list">
+                    <p>Course learning checks</p>
+                    <ul class="content-list-2 text-center">
+                        <li class="text-gold"><i class="fas fa-check"></i></li>
+                        <li class="text-gold"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                    </ul>
+                </li>
+                <li></li>
+                <!-- ------------------------------------------------------------------------------------------------------ -->
+                <div class="text-blue">PREMIUM</div>
+                <li class="content-list">
+                    <p>Certification practice exams</p>
+                    <ul class="content-list-2 text-center">
+                        <li></li>
+                        <li class="text-gold"><i class="fas fa-check"></i></li>
+                        <li></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                    </ul>
+                </li>
+                <li class="content-list">
+                    <p>Interactive courses</p>
+                    <ul class="content-list-2 text-center">
+                        <li></li>
+                        <li class="text-gold"><i class="fas fa-check"></i></li>
+                        <li></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                    </ul>
+                </li>
+                <li class="content-list">
+                    <p>Projects</p>
+                    <ul class="content-list-2 text-center">
+                        <li></li>
+                        <li class="text-gold"><i class="fas fa-check"></i></li>
+                        <li></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                    </ul>
+                </li>
+                <li class="content-list">
+                    <p>Labs</p>
+                    <ul class="content-list-2 text-center">
+                        <li></li>
+                        <li></li>
+                        <li><i class="fas fa-phone-alt"></i></li>
+                        <li><i class="fas fa-phone-alt"></i></li>
+                        <li><i class="fas fa-phone-alt"></i></li>
+                    </ul>
+                </li>
+                <li class="content-list">
+                    <p>Sandboxes</p>
+                    <ul class="content-list-2 text-center">
+                        <li></li>
+                        <li></li>
+                        <li><i class="fas fa-phone-alt"></i></li>
+                        <li><i class="fas fa-phone-alt"></i></li>
+                        <li><i class="fas fa-phone-alt"></i></li>
+                    </ul>
+                </li>
+                <li class="content-list">
+                    <p>Q&A</p>
+                    <ul class="content-list-2 text-center">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                    </ul>
+                </li>
+                <li></li>
+                <!-- ------------------------------------------------------------------------------------------------------ -->
+                <div class="text-blue">ANALYTICS</div>
+                <li class="content-list">
+                    <p>API Access</p>
+                    <ul class="content-list-2 text-center">
+                        <li></li>
+                        <li></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                    </ul>
+                </li>
+                <li class="content-list">
+                    <p>Trend analytics</p>
+                    <ul class="content-list-2 text-center">
+                        <li></li>
+                        <li></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                    </ul>
+                </li>
+                <li class="content-list">
+                    <p>Usage analytics</p>
+                    <ul class="content-list-2 text-center">
+                        <li></li>
+                        <li></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                    </ul>
+                </li>
+                <li class="content-list">
+                    <p>Skills analytics</p>
+                    <ul class="content-list-2 text-center">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li>Basic</li>
+                        <li>Advanced</li>
+                    </ul>
+                </li>
+                <li class="content-list">
+                    <p>Roles analytics</p>
+                    <ul class="content-list-2 text-center">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li>Basic</li>
+                        <li>Advanced</li>
+                    </ul>
+                </li>
+                <li class="content-list">
+                    <p>Channels analytics</p>
+                    <ul class="content-list-2 text-center">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li>Basic</li>
+                        <li>Advanced</li>
+                    </ul>
+                </li>
+                <li></li>
+                <!-- ---------------------------------------------------------------------------------------------------------- -->
+                <div class="text-blue">STRATEGIC</div>
+                <li class="content-list">
+                    <p>Role customization</p>
+                    <ul class="content-list-2 text-center">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                    </ul>
+                </li>
+                <li class="content-list">
+                    <p>Priorities</p>
+                    <ul class="content-list-2 text-center">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li class="text-pink"><i class="fas fa-check"></i></li>
+                    </ul>
+                </li>
+                <li></li>
+                <!-- ------------------------------------------------------------------------------------------------------ -->
+                <div class="text-blue">PROFESSIONAL SERVICES</div>
+                <li class="content-list">
+                    <p>Labs</p>
+                    <ul class="content-list-2 text-center">
+                        <li></li>
+                        <li></li>
+                        <li><i class="fas fa-phone-alt"></i></li>
+                        <li><i class="fas fa-phone-alt"></i></li>
+                        <li><i class="fas fa-phone-alt"></i></li>
+                    </ul>
+                </li>
+                <li class="content-list">
+                    <p>Labs</p>
+                    <ul class="content-list-2 text-center">
+                        <li></li>
+                        <li></li>
+                        <li><i class="fas fa-phone-alt"></i></li>
+                        <li><i class="fas fa-phone-alt"></i></li>
+                        <li><i class="fas fa-phone-alt"></i></li>
+                    </ul>
+                </li>
+                <li class="content-list">
+                    <p>Labs</p>
+                    <ul class="content-list-2 text-center">
+                        <li></li>
+                        <li></li>
+                        <li><i class="fas fa-phone-alt"></i></li>
+                        <li><i class="fas fa-phone-alt"></i></li>
+                        <li><i class="fas fa-phone-alt"></i></li>
+                    </ul>
+                </li>
+                <li class="content-list">
+                    <p>Labs</p>
+                    <ul class="content-list-2 text-center">
+                        <li></li>
+                        <li></li>
+                        <li><i class="fas fa-phone-alt"></i></li>
+                        <li><i class="fas fa-phone-alt"></i></li>
+                        <li><i class="fas fa-phone-alt"></i></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="animated-arrow-text text-center"><span>Contact sales</span><i
+                class="fas fa-chevron-right text-pink"></i></div>
+    </div>
+    <div class="faq text-white">
+        <div></div>
+        <div class="faq-title">
+            <p class="text-pink uppercase">know what you're getting</p>
+            <h1>A few frequently asked questions</h1>
+        </div>
+        <div class="faq-list">
+            <ul>
+                <li>
+                    <p class="que" onclick="showAns(0)">How does a Pluralsight subscription work?<span
+                            class="que-arrow"><i class="fas fa-chevron-down"></i></span></p>
+                    <p class="ans">It's simple. When you sign up, you'll immediately have unlimited viewing of thousands
+                        of expert courses, paths to guide your learning, tools to measure your skills and hands-on
+                        resources like exercise files. There's no limit on what you can learn and you can cancel at any
+                        time.</p>
+                </li>
+                <li>
+                    <p class="que" onclick="showAns(1)">What's the difference between business plans and personal?<span
+                            class="que-arrow"><i class="fas fa-chevron-down"></i></span></p>
+                    <p class="ans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore exercitationem
+                        explicabo mollitia dolorem tempore aut illo nihil sit, quisquam perspiciatis, dolores ipsa atque
+                        reiciendis nesciunt sed impedit? Expedita, eius ut!</p>
+                </li>
+                <li>
+                    <p class="que" onclick="showAns(2)">How many licenses should I purchase for my plan?<span
+                            class="que-arrow"><i class="fas fa-chevron-down"></i></span></p>
+                    <p class="ans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore exercitationem
+                        explicabo mollitia dolorem tempore aut illo nihil sit, quisquam perspiciatis, dolores ipsa atque
+                        reiciendis nesciunt sed impedit? Expedita, eius ut!</p>
+                </li>
+                <li>
+                    <p class="que" onclick="showAns(3)">Do you offer a pilot for business plans?<span
+                            class="que-arrow"><i class="fas fa-chevron-down"></i></span></p>
+                    <p class="ans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore exercitationem
+                        explicabo mollitia dolorem tempore aut illo nihil sit, quisquam perspiciatis, dolores ipsa atque
+                        reiciendis nesciunt sed impedit? Expedita, eius ut!</p>
+                </li>
+                <li>
+                    <p class="que" onclick="showAns(4)">What technologies do Pluralsight courses cover?<span
+                            class="que-arrow"><i class="fas fa-chevron-down"></i></span></p>
+                    <p class="ans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore exercitationem
+                        explicabo mollitia dolorem tempore aut illo nihil sit, quisquam perspiciatis, dolores ipsa atque
+                        reiciendis nesciunt sed impedit? Expedita, eius ut!</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="industry-standard text-white text-center">
+        <p class="text-pink uppercase font-bold">industry standard</p>
+        <h1 class="font-40">Trusted by companies big and small to scale their business</h1>
+        <div class="brands">
+            <img src="https://www.pluralsight.com/content/pluralsight/en/global/product/business-logos-large/jcr:content/main/generic_block/parsys/columns/column-parsys-1/flex_block/parsys/flex_open_block/parsys/image/image-res.img.f10fb368-f6ac-4bec-bf6f-f00b483374f7.png"
+                alt="">
+            <img src="https://www.pluralsight.com/content/pluralsight/en/global/product/business-logos-large/jcr:content/main/generic_block/parsys/columns/column-parsys-1/flex_block/parsys/flex_open_block_copy/parsys/image/image-res.img.1ee95f03-68f7-4203-90ac-0e4c72283242.png"
+                alt="">
+            <img src="https://www.pluralsight.com/content/pluralsight/en/global/product/business-logos-large/jcr:content/main/generic_block/parsys/columns/column-parsys-1/flex_block/parsys/flex_open_block_copy_1844218644/parsys/image/image-res.img.7eff31f9-9254-4e63-82e4-251b963164fa.png"
+                alt="">
+            <img src="https://www.pluralsight.com/content/pluralsight/en/global/product/business-logos-large/jcr:content/main/generic_block/parsys/columns/column-parsys-1/flex_block/parsys/flex_open_block_copy_2057627799/parsys/image/image-res.img.7af4319d-447a-481b-816c-41343dd11527.png"
+                alt="">
+            <img src="https://www.pluralsight.com/content/pluralsight/en/global/product/business-logos-large/jcr:content/main/generic_block/parsys/columns/column-parsys-1/flex_block/parsys/flex_open_block_copy_38505723/parsys/image/image-res.img.ab7fe763-65ce-4074-9fe8-9c5107c8697e.png"
+                alt="">
+            <img src="https://www.pluralsight.com/content/pluralsight/en/global/product/business-logos-large/jcr:content/main/generic_block/parsys/columns/column-parsys-1/flex_block/parsys/flex_open_block_copy_1063295034/parsys/image/image-res.img.6ae6a639-6e25-47d9-bfd4-b134c8af5353.png"
+                alt="">
+        </div>
+        <div class="animated-arrow-text text-center font-bold"><span>View our customer stories</span><i
+                class="fas fa-chevron-right text-pink"></i></div>
+    </div>
+    <div id="footer"></div>
+    <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/footer.js"></script>
+    <script src="../scripts/pricing.js"></script>
+</body>
+
+</html>

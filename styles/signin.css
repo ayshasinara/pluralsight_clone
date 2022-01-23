@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    display:flex;
+    height: 700px;
+    /* font-family: " PS TT Commons Roman","Gotham SSm A","Gotham SSm B","Arial,sans-serif"; */
+    
+}
+.banner{
+    background-image: url(https://www.pluralsight.com/content/dam/pluralsight2/login/bg-gtm-2020.png);
+background-color: black;
+background-position: right center;
+background-size: contain;
+background-repeat: no-repeat;
+width: 60%;
+height:100%
+
+}
+.box{
+    font-family: PS TT Commons Roman,Gotham SSm A,Gotham SSm B,Arial,sans-serif;
+    /* font-weight: bold; */
+   background-color: #0d0f12;
+     color: hsla(0,0%,100%,.95);
+    width:26%;
+    height:80%;
+   padding: 70px;
+   padding-left: 120px;
+}
+input{
+    background-color: #0d0f12;
+    border:1px solid gray;
+    margin-bottom: 30px ;
+    height: 30px;
+    width: 300px;
+    color: white;
+}
+.box>img{
+    margin-bottom: 50px;
+    height: 60px;
+   
+}
+.banner>img{
+    margin: 70px;
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+button{
+    margin-left: 100px;
+    width: 200px;
+    height:40px;
+    font-size: 14px;
+    border-radius: 2px;
+   background: linear-gradient(to right,#F05A28,#EC008C,#F05A28);
+    color: #fff;
+     border: 0px;
+
+}
+.sub{
+    background-color:#0084bd; 
+    border: 0px;
+    border-radius: 2px;
+    height:40px;
+    color: white;
+}
+.p1{
+    color:#11a2e0 ;
+    text-align: center;
+    margin-right: 80px;
+    font-size: 13px;
+    /* font-weight: bold; */
+   
+  
+}
+.p2{
+    color: rgb(163, 159, 159);
+    font-size: 10px;
+    text-align: center;
+    margin-right: 80px;
+    margin-top: 80px;
+}
+.p3{
+    color: rgb(163, 159, 159);;
+    font-size: 10px;
+    text-align: center;
+    text-decoration: underline;
+    margin-right: 80px;
+}
+a{
+    background-color: rgb(59, 55, 55);
+    border-radius: 2px;
+    color: white;
+   
+    text-decoration:none;
+    
+    padding: 10px;
+    padding-left: 85px;
+    padding-right: 85px;
+}
+hr{
+    width: 300px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+    border: 0.2px solid gray;
+}
+.img1{
+    height:30px;
+  padding-left: 550px;
+}
