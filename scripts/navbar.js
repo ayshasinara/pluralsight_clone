@@ -258,7 +258,7 @@ function showNavbar(){
             </div>
         </div>
     </div>
-    <a href="plans.html"><button class="btn btn-white-border">TRY FOR FREE</button></a>
+    <a href="pricing.html"><button class="btn btn-white-border">TRY FOR FREE</button></a>
 </nav>`;
 
     document.querySelector("body").append(div);

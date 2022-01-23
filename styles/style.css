@@ -112,3 +112,23 @@ body{
     padding-left: 1.9%;
     padding-right: 16px;
 }
+.mysize{
+    font-size: 24px;
+    line-height: 1.4;
+}
+.mysize2{
+    font-size: 17px;
+    font-weight: bold;
+}
+.ans>ul>li>.hoverme:hover{
+   text-decoration: underline;
+ color: #EC008C;
+
+
+}
+p>.hoverme:hover{
+    text-decoration: underline;
+  color: #EC008C;
+ 
+ 
+ }

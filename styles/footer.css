@@ -16,19 +16,19 @@
     transition: color .3s ease;
     font-size: 13px;
 }
-.box>h3 {
+#footer .box>h3 {
     color: white;
     margin: 40px;
 }
-.box>p:hover {
+#footer .box>p:hover {
     color: white;
 }
-.box>p {
+#footer .box>p {
     margin: 20px 0px 0px 40px;
     color: #7c7c7d;
     font-weight: normal !important;
 }
-.language {
+#footer .language {
     margin: 10px 85px 10px 85px;
     display: flex;
     height: 20px;
@@ -37,21 +37,21 @@
     padding: 30px 0px 30px 0px;
     cursor: pointer;
 }
-.language>div {
+#footer .language>div {
     color: #7c7c7d;
     padding: 0px 20px 0px 20px;
 }
-.language>:nth-child(3) {
+#footer .language>:nth-child(3) {
     color: white;
 }
-.contact {
+#footer .contact {
     display: flex;
     height: 40px;
 }
-.contact>div {
+#footer .contact>div {
     padding: 30px;
 }
-.base {
+#footer .base {
     display: flex;
     height: 20px;
     padding-top: 20px;
@@ -65,25 +65,25 @@
     font-size: 12px;
     cursor: pointer;
 }
-.base img {
+#footer .base img {
     padding-top: 10px;
     width: 34px;
     height: 34px;
     margin-left: 65px;
     cursor: pointer;
 }
-.base i {
+#footer .base i {
     color: white;
     padding: 5px;
     justify-content: space-around;
     cursor: pointer;
 }
-.change {
+#footer .change {
     padding-top: 20px;
     color: #7c7c7d;
     font-size: 12px;
     cursor: text;
 }
-.hoverme:hover {
+#footer .hoverme:hover {
     color: white;
 }
