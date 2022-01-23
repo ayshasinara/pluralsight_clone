@@ -1,24 +1,376 @@
-.share-your-skills{
-    height: 700px;
-    background: #000;
-    padding: 100px;
-    text-align: center;
+body {
+  background-color: #000;
 }
-.non-profit{
-    background-image: url("https://www.pluralsight.com/content/pluralsight/en/jcr:content/main/generic_block_1609496607/image-res.img.33ca2e50-2f6c-49aa-8635-2ceaf23513b1.jpg");
-    background-position: right center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 100px;
+.changing-text{
+  display: inline-flex;
 }
-.non-profit > div{
-    width: 45%;
+#text-content::after{
+  content:"";
+  animation: changeText 6s ease infinite;
+  animation-timing-function: cubic-bezier(1, 0, 0, 1);
 }
-.try-foot{
-    background-color: #181818;
-    padding: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 150px;
+@keyframes changeText {
+  0% { content:"teams";}
+  20% { content:"products";}
+  40% { content:"workflows";}
+  60% { content: "skills";}
+  80% { content: "processes";}
+}
+@keyframes slideUp {
+  0% {margin-bottom: -50px; font-size: 20px;}
+  10% {margin-bottom: -40px; font-size: 20px;}
+  20% {margin-bottom: -30px; font-size: 20px;}
+  30% {margin-bottom: -20px; font-size: 20px;}
+  40% {margin-bottom: -10px; font-size: 20px;}
+  50%{margin-bottom: 0px; font-size: 20px;}
+  60% {margin-bottom: 10px; font-size: 20px;}
+  70% {margin-bottom: 20px; font-size: 20px;}
+  80% {margin-bottom: 30px; font-size: 20px;}
+  90% {margin-bottom: 40px; font-size: 20px;}
+  100%{margin-bottom: 50px; font-size: 20px;}
+}
+.share-your-skills {
+  height: 100px;
+  background: #000;
+  padding: 100px;
+  text-align: center;
+}
+.non-profit {
+  background-image: url("https://www.pluralsight.com/content/pluralsight/en/jcr:content/main/generic_block_1609496607/image-res.img.33ca2e50-2f6c-49aa-8635-2ceaf23513b1.jpg");
+  background-position: right center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px;
+}
+.non-profit > div {
+  width: 45%;
+}
+.try-foot {
+  background-color: #181818;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 150px;
+}
+.discover-box {
+  background-color: black;
+  width: 95%;
+  margin: auto;
+  font-family: "Helvetica Neue", "Helvetica", " Arial", "romote", "sans-serif";
+}
+.d-product-flex {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+}
+.d-image > img {
+  width: 93%;
+  border-radius: 20px;
+}
+.discover-box h5 {
+  color: #ffba0e !important;
+}
+.discover-box h1,
+.discover-box p {
+  color: rgb(255, 255, 255);
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+.discover-box h4 {
+  color: #ec008c !important;
+}
+.d-box_p {
+  font-size: 14px;
+}
+.d-box2 {
+  display: grid;
+  grid-template-columns: 900px 500px;
+  /* flex-wrap: wrap; */
+
+  margin-top: 100px;
+}
+.d-back {
+  height: 450px;
+  width: 100%;
+  background-image: url("https://www.pluralsight.com/content/pluralsight/en/jcr:content/main/targeted_section/targeted-parsys-customer-types-1/generic_block/parsys/columns/column-parsys-1/generic_block/image-res.img.6035278d-dbde-46e2-8112-82c230cb476a.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.d-my_plural {
+  padding-top: 100px;
+  padding-left: 50px;
+
+  font-size: 70px;
+}
+.d-ryan {
+  background-color: rgb(12, 100, 182);
+  padding: 60px;
+  width: 100%;
+}
+.ryan-story-btn {
+  background-color: black;
+  color: white;
+  border: 0px;
+  height: 50px;
+}
+.d-ryan-img {
+  width: 400px;
+}
+@media only screen and (min-width: 0px) and (max-width: 320px) {
+  .d-product-flex {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .d-box2 {
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-rows: repeat(2,200px); */
+  }
+}
+
+/*mobile view  */
+@media only screen and (min-width: 321px) and (max-width: 720px) {
+  .d-product-flex {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .d-box2 {
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-rows: repeat(2,200px); */
+  }
+}
+#container1 {
+  height: 500px;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  font-family: sans-serif;
+  background-image: url(https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022/hero-illustration.png);
+}
+
+.head1 {
+  font-size: 55px;
+  font-family: sans-serif;
+}
+.imggap {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 350px 50px 350px;
+}
+.line {
+  background-color: black;
+  margin: 0px auto;
+  width: 0%;
+  height: 150px;
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #ec008c, #f15b2a, rgba(0, 0, 0, 0)) 1;
+}
+.lineback {
+  background-color: black;
+}
+.btn1 {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 0 20px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  padding: 18px 34px;
+  background-size: 300% 100%;
+  background-image: linear-gradient(to right, #f05a28, #ec008c, #f05a28);
+}
+.btn2 {
+  background-color: transparent;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 0 20px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  padding: 18px 34px;
+  background-size: 300% 100%;
+  border-color: 1px solid white;
+}
+.flexbtn {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 500px;
+  margin-right: 450px;
+  justify-content: space-between;
+}
+.text1 {
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+.text2 {
+  padding-top: 50px;
+}
+.mid_box {
+  width: 100%;
+  height: 300px;
+  background-color: black;
+  display: flex;
+}
+.left_mid_box {
+  height: 70%;
+  float: left;
+  margin-top: 2%;
+  margin-bottom: auto;
+  width: 57%;
+  background-color: black;
+}
+.left_mid_box_a {
+  width: 43%;
+  height: 35%;
+  background-color: #212121;
+  margin-left: 3%;
+  float: left;
+  margin-top: 3%;
+  border-radius: 5%;
+}
+.left_mid_box_a_1 {
+  margin-left: 20px;
+  color: #ec008c;
+  margin-top: 20px;
+  width: 70%;
+  float: left;
+  font-weight: bold;
+}
+.left_mid_box_a_2 {
+  margin-left: 20px;
+  color: red;
+  width: 60%;
+
+  margin-top: 7px;
+  float: left;
+  font-size: 25px;
+  color: white;
+}
+.left_mid_box_a_3 {
+  width: 60%;
+  margin-left: 20px;
+  color: red;
+  margin-top: 9px;
+  float: left;
+  color: white;
+}
+.left_mid_box_a_4 {
+  margin-left: 20px;
+  color: red;
+
+  margin-top: 9px;
+  width: 39%;
+  font-weight: bold;
+  float: left;
+  color: white;
+}
+
+.left_mid_box_a img {
+  clear: right;
+  width: 30%;
+  height: 60%;
+  background-color: #212121;
+}
+.left_mid_box_a i {
+  font-size: 14px;
+  color: #ec008c;
+}
+#right_mid_box {
+  height: 50%;
+  margin-top: 8%;
+  width: 33%;
+  float: left;
+  background-color: black;
+}
+.right_mid_box_1 {
+  margin-top: 50px;
+  font-size: 18px;
+  color: #ec008c;
+  font-weight: 400;
+  background-color: black;
+}
+.right_mid_box_2 {
+  margin-top: 20px;
+  font-size: 30px;
+  color: #ec008c;
+  font-weight: bold;
+  color: white;
+  width: 40%;
+  background-color: black;
+  text-align: left;
+}
+.right_mid_box_3 {
+  margin-top: 20px;
+  font-size: 17px;
+  color: rgb(201, 201, 201);
+  width: 90%;
+  background-color: black;
+  text-align: left;
+}
+.right_mid_box_4 i {
+  font-size: 12px;
+  color: #ec008c;
+  background-color: black;
+}
+.right_mid_box_4 {
+  margin-top: 20px;
+  font-size: 20px;
+  width: 90%;
+  background-color: black;
+  font-weight: bold;
+  text-align: left;
+  box-shadow: rgb(248, 248, 248);
+  text-shadow: white;
+  color: white;
+}
+* {
+  font-family: "Secular One", sans-serif;
+}
+body {
+  background-color: rgb(0, 0, 0);
+  margin: 0px;
+  padding: 0px;
+}
+
+.mid_box {
+  height: 600px;
+}
+.left_mid_box {
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+  clear: both;
+}
+#right_mid_box {
+  width: 100%;
+  padding-left: 3%;
+  height: 500px;
+  clear: both;
+  margin-top: 0px;
+}
+.btn-gradient-viewplan{
+    width: 200px;
+}
+.btn-gradient-viewplan::after{
+    content: "VIEW PLAN";
+}
+.mid_box a{
+  color: white;
+  text-decoration: none;
 }
