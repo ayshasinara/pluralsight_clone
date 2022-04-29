@@ -38,7 +38,7 @@ function closeDropdown(i){
 function showNavbar(){
     let div = document.createElement("div");
     div.innerHTML = `<nav class="navbar">
-    <a href="../index.html" class="nav-ps-logo"><img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/global/header/PS_logo.png" alt=""></a>
+    <a href="../index.html" class="nav-ps-logo"><img src="https://i.ibb.co/8nktQJD/PS-logo.png" alt=""></a>
     <div class="dropdown">
         <button class="dropdown-btn nav-arrow" onclick="controlDropdown(0)">Platform<i class="fas fa-chevron-down"></i></button>
         <hr class="dash-line">
