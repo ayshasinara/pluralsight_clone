@@ -38,7 +38,7 @@ function closeDropdown(i){
 function showNavbar(){
     let div = document.createElement("div");
     div.innerHTML = `<nav class="navbar">
-    <a href="../index.html" class="nav-ps-logo"><img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/global/header/PS_logo.png" alt=""></a>
+    <a href="index.html" class="nav-ps-logo"><img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/global/header/PS_logo.png" alt=""></a>
     <div class="dropdown">
         <button class="dropdown-btn nav-arrow" onclick="controlDropdown(0)">Platform<i class="fas fa-chevron-down"></i></button>
         <hr class="dash-line">
@@ -163,7 +163,7 @@ function showNavbar(){
                             <a href="">What is Skills?</a>
                         </li>
                         <li>
-                            <a href="pricing.html">View Plans</a>
+                            <a href="../pages/pricing.html">View Plans</a>
                         </li>
                     </ul>
                 </div>
@@ -175,7 +175,7 @@ function showNavbar(){
                             <a href="">What is Flow?</a>
                         </li>
                         <li>
-                            <a href="pricing.html">View Plans</a>
+                            <a href="../pages/pricing.html">View Plans</a>
                         </li>
                     </ul>
                 </div>
@@ -238,7 +238,7 @@ function showNavbar(){
             <div class="nav-closebtn" onclick="closeDropdown(4)"><i class="fas fa-times"></i></div>
             <div class="dropdown-container nav-signin-container">
                 <div class="text-white nav-content-skills">
-                    <div onclick="window.location.href='signin.html'">
+                    <div onclick="window.location.href='../pages/signin.html'">
                         <p class="nav-content-title">SIGN IN WITH</p>
                         <div class="nav-signin-logo">
                             <img class="nav-product-logo" src="https://www.pluralsight.com/content/dam/pluralsight2/experiment-fragment/navigation/Skill_logo_white.png" alt="SKILLS">
@@ -247,7 +247,7 @@ function showNavbar(){
                     </div>
                 </div>
                 <div class="text-white nav-content-flow">
-                    <div onclick="window.location.href='signin.html'">
+                    <div onclick="window.location.href='../pages/signin.html'">
                         <p class="nav-content-title">SIGN IN WITH</p>
                         <div class="nav-signin-logo">
                             <img class="nav-product-logo" src="https://www.pluralsight.com/content/dam/pluralsight2/experiment-fragment/navigation/Flow_Logo_white.png" alt="FLOW">
@@ -258,7 +258,7 @@ function showNavbar(){
             </div>
         </div>
     </div>
-    <a href="pricing.html"><button class="btn btn-white-border">TRY FOR FREE</button></a>
+    <a href="../pages/pricing.html"><button class="btn btn-white-border">TRY FOR FREE</button></a>
 </nav>`;
 
     document.querySelector("body").append(div);
